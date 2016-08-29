@@ -1,0 +1,6 @@
+title: "VR Orlando Weather"
+repo: "aframevr/boilerplate"
+description: "Weather pulled from the OpenWeatherMaps API."
+mobile: true
+components:
+assets:

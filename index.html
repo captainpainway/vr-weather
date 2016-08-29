@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>VR Orlando Weather</title>
+    <meta name="description" content="VR Orlando Weather">
+    <script src="https://aframe.io/releases/0.3.0/aframe.min.js"></script>
+    <script src="weather.js"></script>
+    <script src="https://rawgit.com/ngokevin/aframe-text-component/master/dist/aframe-text-component.min.js"></script>
+  </head>
+  <body>
+    <a-scene>
+      <a-assets>
+          <img id="sky" src="beach.jpg">
+      </a-assets>
+      <a-entity
+        geometry="primitive: sphere; radius: 50"
+        material="shader: flat; src: #sky"
+        scale="1 1 -1">
+      </a-entity>
+      <a-entity
+        id="temp"
+        position="-0.7 1.4 -1"
+        material="shader: standard; color: #FFC107">
+      </a-entity>
+      <a-entity
+        id="location"
+        position="-1.2 1.4 2.3"
+        rotation="0 90 0"
+        material="shader: standard; color: #FFC107">
+      </a-entity>
+      <a-entity
+        id="weather"
+        position="1.1 1.4 0"
+        rotation="0 -90 0"
+        material="shader: standard; color: #FFC107">
+      </a-entity>
+      <a-entity light="type: ambient; color: #BBB"></a-entity>
+      <a-entity light="type: directional; color: #FFF; intensity: 0.8" position="0.5 1.5 0.5"></a-entity>
+    </a-scene>
+  </body>
+</html>
